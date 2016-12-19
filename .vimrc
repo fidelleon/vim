@@ -5,6 +5,7 @@ set number
 set t_Co=256
 colorscheme slate
 filetype off
+filetype plugin on
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
@@ -19,6 +20,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Shougo/neocomplete'
 
 call vundle#end()
 filetype plugin indent on
@@ -30,6 +32,7 @@ let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:airline_theme='luna'
+let g:neocomplete#enable_at_startup = 1
 
 set tabstop=4
 set shiftwidth=4
