@@ -1,4 +1,5 @@
 syntax on
+set viminfo='10,\"100,:20,%,n~/.viminfo
 let python_highlight_all=1
 set nocompatible
 set number
@@ -39,7 +40,20 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab  
 set laststatus=2
+set hlsearch
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 map <F7> :set paste<CR>
 map <F8> :set nopaste<CR>
+
+function! ResCur()
+  if line("'\"") <= line("$")
+    normal! g`"
+    return 1
+  endif
+endfunction
+
+augroup resCur
+  autocmd!
+  autocmd BufWinEnter * call ResCur()
+augroup END
