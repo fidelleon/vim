@@ -41,6 +41,8 @@ set softtabstop=4
 set expandtab  
 set laststatus=2
 set hlsearch
+set incsearch
+
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 map <F7> :set paste<CR>
