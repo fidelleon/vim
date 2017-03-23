@@ -48,6 +48,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Shougo/neocomplete'
+Plugin 'mattn/emmet-vim'
 
 call vundle#end()
 filetype plugin indent on
