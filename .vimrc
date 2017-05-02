@@ -50,6 +50,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Shougo/neocomplete'
 Plugin 'mattn/emmet-vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'vim-scripts/indentpython.vim'
 
 call vundle#end()
 filetype plugin indent on
