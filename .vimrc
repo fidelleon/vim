@@ -76,6 +76,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 map <F7> :set paste<CR>
 map <F8> :set nopaste<CR>
+map <F9> :setfiletype htmldjango<CR>
 
 function! ResCur()
   if line("'\"") <= line("$")
